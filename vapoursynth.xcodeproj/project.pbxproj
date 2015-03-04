@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667D4C5B1A9CE92700D42082 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D4C5A1A9CE92700D42082 /* Foundation.framework */; };
+		667D4C5D1A9CE93100D42082 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D4C5C1A9CE93100D42082 /* AVFoundation.framework */; };
+		667D4C5F1A9CE93F00D42082 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D4C5E1A9CE93F00D42082 /* CoreVideo.framework */; };
+		667D4C651A9CE9A800D42082 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D4C641A9CE9A800D42082 /* CoreMedia.framework */; };
+		66E5FE7D1AA62BF9008DF36B /* VapourSynth.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FE751AA62BE1008DF36B /* VapourSynth.h */; };
+		66E5FE7E1AA62BF9008DF36B /* VSHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FE761AA62BE1008DF36B /* VSHelper.h */; };
+		66E5FE7F1AA62BF9008DF36B /* VSScript.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FE771AA62BE1008DF36B /* VSScript.h */; };
+		66E5FED51AA7C305008DF36B /* libpython.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FED41AA7C305008DF36B /* libpython.a */; };
+		66E5FEDF1AA7C311008DF36B /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FED61AA7C311008DF36B /* libavcodec.a */; };
+		66E5FEE01AA7C311008DF36B /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FED71AA7C311008DF36B /* libavdevice.a */; };
+		66E5FEE11AA7C311008DF36B /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FED81AA7C311008DF36B /* libavfilter.a */; };
+		66E5FEE21AA7C311008DF36B /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FED91AA7C311008DF36B /* libavformat.a */; };
+		66E5FEE31AA7C311008DF36B /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FEDA1AA7C311008DF36B /* libavresample.a */; };
+		66E5FEE41AA7C311008DF36B /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FEDB1AA7C311008DF36B /* libavutil.a */; };
+		66E5FEE51AA7C311008DF36B /* libpython.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FEDC1AA7C311008DF36B /* libpython.a */; };
+		66E5FEE61AA7C311008DF36B /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FEDD1AA7C311008DF36B /* libswresample.a */; };
+		66E5FEE71AA7C311008DF36B /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FEDE1AA7C311008DF36B /* libswscale.a */; };
+		66E5FEEB1AA7C396008DF36B /* vsscript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEEA1AA7C396008DF36B /* vsscript.cpp */; };
+		66E5FEEF1AA7C5F3008DF36B /* vapoursynth.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEED1AA7C5F3008DF36B /* vapoursynth.c */; };
+		66E5FEF01AA7C605008DF36B /* vapoursynth_api.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FEEC1AA7C5F3008DF36B /* vapoursynth_api.h */; };
+		66E5FEF11AA7C605008DF36B /* vapoursynth.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FEEE1AA7C5F3008DF36B /* vapoursynth.h */; };
+		66E5FF001AA7C64E008DF36B /* cpufeatures.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF21AA7C64E008DF36B /* cpufeatures.c */; };
+		66E5FF011AA7C64E008DF36B /* lutfilters.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF31AA7C64E008DF36B /* lutfilters.c */; };
+		66E5FF021AA7C64E008DF36B /* mergefilters.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF41AA7C64E008DF36B /* mergefilters.c */; };
+		66E5FF031AA7C64E008DF36B /* reorderfilters.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF51AA7C64E008DF36B /* reorderfilters.c */; };
+		66E5FF041AA7C64E008DF36B /* simplefilters.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF61AA7C64E008DF36B /* simplefilters.c */; };
+		66E5FF051AA7C64E008DF36B /* vsresize.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF71AA7C64E008DF36B /* vsresize.c */; };
+		66E5FF061AA7C64E008DF36B /* cachefilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF81AA7C64E008DF36B /* cachefilter.cpp */; };
+		66E5FF071AA7C64E008DF36B /* exprfilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF91AA7C64E008DF36B /* exprfilter.cpp */; };
+		66E5FF081AA7C64E008DF36B /* settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEFA1AA7C64E008DF36B /* settings.cpp */; };
+		66E5FF091AA7C64E008DF36B /* textfilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEFB1AA7C64E008DF36B /* textfilter.cpp */; };
+		66E5FF0A1AA7C64E008DF36B /* vsapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEFC1AA7C64E008DF36B /* vsapi.cpp */; };
+		66E5FF0B1AA7C64E008DF36B /* vscore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEFD1AA7C64E008DF36B /* vscore.cpp */; };
+		66E5FF0C1AA7C64E008DF36B /* vslog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEFE1AA7C64E008DF36B /* vslog.cpp */; };
+		66E5FF0D1AA7C64E008DF36B /* vsthreadpool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEFF1AA7C64E008DF36B /* vsthreadpool.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		667D4B3A1A9CDFEB00D42082 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				66E5FE7D1AA62BF9008DF36B /* VapourSynth.h in CopyFiles */,
+				66E5FEF01AA7C605008DF36B /* vapoursynth_api.h in CopyFiles */,
+				66E5FEF11AA7C605008DF36B /* vapoursynth.h in CopyFiles */,
+				66E5FE7E1AA62BF9008DF36B /* VSHelper.h in CopyFiles */,
+				66E5FE7F1AA62BF9008DF36B /* VSScript.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		667D4B3C1A9CDFEB00D42082 /* libvapoursynth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libvapoursynth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		667D4C5A1A9CE92700D42082 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		667D4C5C1A9CE93100D42082 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		667D4C5E1A9CE93F00D42082 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		667D4C641A9CE9A800D42082 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		66E5FE751AA62BE1008DF36B /* VapourSynth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VapourSynth.h; path = vapoursynth_for_ios/vapoursynth/include/VapourSynth.h; sourceTree = "<group>"; };
+		66E5FE761AA62BE1008DF36B /* VSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VSHelper.h; path = vapoursynth_for_ios/vapoursynth/include/VSHelper.h; sourceTree = "<group>"; };
+		66E5FE771AA62BE1008DF36B /* VSScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VSScript.h; path = vapoursynth_for_ios/vapoursynth/include/VSScript.h; sourceTree = "<group>"; };
+		66E5FED41AA7C305008DF36B /* libpython.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython.a; path = "../../../Library/Developer/Xcode/DerivedData/vapoursynth_for_ios-bizwjacenfqpqbbbxzfiigngczpb/Build/Products/Debug-iphoneos/libpython.a"; sourceTree = "<group>"; };
+		66E5FED61AA7C311008DF36B /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ffmpeg/libavcodec.a; sourceTree = "<group>"; };
+		66E5FED71AA7C311008DF36B /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ffmpeg/libavdevice.a; sourceTree = "<group>"; };
+		66E5FED81AA7C311008DF36B /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ffmpeg/libavfilter.a; sourceTree = "<group>"; };
+		66E5FED91AA7C311008DF36B /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ffmpeg/libavformat.a; sourceTree = "<group>"; };
+		66E5FEDA1AA7C311008DF36B /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ffmpeg/libavresample.a; sourceTree = "<group>"; };
+		66E5FEDB1AA7C311008DF36B /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ffmpeg/libavutil.a; sourceTree = "<group>"; };
+		66E5FEDC1AA7C311008DF36B /* libpython.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython.a; path = ffmpeg/libpython.a; sourceTree = "<group>"; };
+		66E5FEDD1AA7C311008DF36B /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ffmpeg/libswresample.a; sourceTree = "<group>"; };
+		66E5FEDE1AA7C311008DF36B /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ffmpeg/libswscale.a; sourceTree = "<group>"; };
+		66E5FEEA1AA7C396008DF36B /* vsscript.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vsscript.cpp; path = vapoursynth/src/vsscript/vsscript.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEEC1AA7C5F3008DF36B /* vapoursynth_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vapoursynth_api.h; path = vapoursynth/src/cython/vapoursynth_api.h; sourceTree = SOURCE_ROOT; };
+		66E5FEED1AA7C5F3008DF36B /* vapoursynth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vapoursynth.c; path = vapoursynth/src/cython/vapoursynth.c; sourceTree = SOURCE_ROOT; };
+		66E5FEEE1AA7C5F3008DF36B /* vapoursynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vapoursynth.h; path = vapoursynth/src/cython/vapoursynth.h; sourceTree = SOURCE_ROOT; };
+		66E5FEF21AA7C64E008DF36B /* cpufeatures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpufeatures.c; path = vapoursynth/src/core/cpufeatures.c; sourceTree = SOURCE_ROOT; };
+		66E5FEF31AA7C64E008DF36B /* lutfilters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lutfilters.c; path = vapoursynth/src/core/lutfilters.c; sourceTree = SOURCE_ROOT; };
+		66E5FEF41AA7C64E008DF36B /* mergefilters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mergefilters.c; path = vapoursynth/src/core/mergefilters.c; sourceTree = SOURCE_ROOT; };
+		66E5FEF51AA7C64E008DF36B /* reorderfilters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reorderfilters.c; path = vapoursynth/src/core/reorderfilters.c; sourceTree = SOURCE_ROOT; };
+		66E5FEF61AA7C64E008DF36B /* simplefilters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = simplefilters.c; path = vapoursynth/src/core/simplefilters.c; sourceTree = SOURCE_ROOT; };
+		66E5FEF71AA7C64E008DF36B /* vsresize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vsresize.c; path = vapoursynth/src/core/vsresize.c; sourceTree = SOURCE_ROOT; };
+		66E5FEF81AA7C64E008DF36B /* cachefilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cachefilter.cpp; path = vapoursynth/src/core/cachefilter.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEF91AA7C64E008DF36B /* exprfilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = exprfilter.cpp; path = vapoursynth/src/core/exprfilter.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEFA1AA7C64E008DF36B /* settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = settings.cpp; path = vapoursynth/src/core/settings.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEFB1AA7C64E008DF36B /* textfilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = textfilter.cpp; path = vapoursynth/src/core/textfilter.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEFC1AA7C64E008DF36B /* vsapi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vsapi.cpp; path = vapoursynth/src/core/vsapi.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEFD1AA7C64E008DF36B /* vscore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vscore.cpp; path = vapoursynth/src/core/vscore.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEFE1AA7C64E008DF36B /* vslog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vslog.cpp; path = vapoursynth/src/core/vslog.cpp; sourceTree = SOURCE_ROOT; };
+		66E5FEFF1AA7C64E008DF36B /* vsthreadpool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vsthreadpool.cpp; path = vapoursynth/src/core/vsthreadpool.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		667D4B391A9CDFEB00D42082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E5FED51AA7C305008DF36B /* libpython.a in Frameworks */,
+				667D4C651A9CE9A800D42082 /* CoreMedia.framework in Frameworks */,
+				66E5FEDF1AA7C311008DF36B /* libavcodec.a in Frameworks */,
+				66E5FEE01AA7C311008DF36B /* libavdevice.a in Frameworks */,
+				66E5FEE11AA7C311008DF36B /* libavfilter.a in Frameworks */,
+				66E5FEE21AA7C311008DF36B /* libavformat.a in Frameworks */,
+				66E5FEE31AA7C311008DF36B /* libavresample.a in Frameworks */,
+				66E5FEE41AA7C311008DF36B /* libavutil.a in Frameworks */,
+				66E5FEE51AA7C311008DF36B /* libpython.a in Frameworks */,
+				66E5FEE61AA7C311008DF36B /* libswresample.a in Frameworks */,
+				66E5FEE71AA7C311008DF36B /* libswscale.a in Frameworks */,
+				667D4C5F1A9CE93F00D42082 /* CoreVideo.framework in Frameworks */,
+				667D4C5D1A9CE93100D42082 /* AVFoundation.framework in Frameworks */,
+				667D4C5B1A9CE92700D42082 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		667D4B331A9CDFEB00D42082 = {
+			isa = PBXGroup;
+			children = (
+				66E5FED61AA7C311008DF36B /* libavcodec.a */,
+				66E5FED71AA7C311008DF36B /* libavdevice.a */,
+				66E5FED81AA7C311008DF36B /* libavfilter.a */,
+				66E5FED91AA7C311008DF36B /* libavformat.a */,
+				66E5FEDA1AA7C311008DF36B /* libavresample.a */,
+				66E5FEDB1AA7C311008DF36B /* libavutil.a */,
+				66E5FEDC1AA7C311008DF36B /* libpython.a */,
+				66E5FEDD1AA7C311008DF36B /* libswresample.a */,
+				66E5FEDE1AA7C311008DF36B /* libswscale.a */,
+				66E5FED41AA7C305008DF36B /* libpython.a */,
+				667D4C641A9CE9A800D42082 /* CoreMedia.framework */,
+				667D4C5E1A9CE93F00D42082 /* CoreVideo.framework */,
+				667D4C5C1A9CE93100D42082 /* AVFoundation.framework */,
+				667D4C5A1A9CE92700D42082 /* Foundation.framework */,
+				667D4B3E1A9CDFEB00D42082 /* vapoursynth */,
+				667D4B3D1A9CDFEB00D42082 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		667D4B3D1A9CDFEB00D42082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				667D4B3C1A9CDFEB00D42082 /* libvapoursynth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		667D4B3E1A9CDFEB00D42082 /* vapoursynth */ = {
+			isa = PBXGroup;
+			children = (
+				66E5FE741AA62BD7008DF36B /* include */,
+				667D4B5F1A9CE06A00D42082 /* src */,
+			);
+			name = vapoursynth;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		667D4B5F1A9CE06A00D42082 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				667D4B611A9CE06A00D42082 /* core */,
+				667D4B821A9CE06A00D42082 /* cython */,
+				667D4BD41A9CE06A00D42082 /* vsscript */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		667D4B611A9CE06A00D42082 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				66E5FEF21AA7C64E008DF36B /* cpufeatures.c */,
+				66E5FEF31AA7C64E008DF36B /* lutfilters.c */,
+				66E5FEF41AA7C64E008DF36B /* mergefilters.c */,
+				66E5FEF51AA7C64E008DF36B /* reorderfilters.c */,
+				66E5FEF61AA7C64E008DF36B /* simplefilters.c */,
+				66E5FEF71AA7C64E008DF36B /* vsresize.c */,
+				66E5FEF81AA7C64E008DF36B /* cachefilter.cpp */,
+				66E5FEF91AA7C64E008DF36B /* exprfilter.cpp */,
+				66E5FEFA1AA7C64E008DF36B /* settings.cpp */,
+				66E5FEFB1AA7C64E008DF36B /* textfilter.cpp */,
+				66E5FEFC1AA7C64E008DF36B /* vsapi.cpp */,
+				66E5FEFD1AA7C64E008DF36B /* vscore.cpp */,
+				66E5FEFE1AA7C64E008DF36B /* vslog.cpp */,
+				66E5FEFF1AA7C64E008DF36B /* vsthreadpool.cpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		667D4B821A9CE06A00D42082 /* cython */ = {
+			isa = PBXGroup;
+			children = (
+				66E5FEEC1AA7C5F3008DF36B /* vapoursynth_api.h */,
+				66E5FEED1AA7C5F3008DF36B /* vapoursynth.c */,
+				66E5FEEE1AA7C5F3008DF36B /* vapoursynth.h */,
+			);
+			path = cython;
+			sourceTree = "<group>";
+		};
+		667D4BD41A9CE06A00D42082 /* vsscript */ = {
+			isa = PBXGroup;
+			children = (
+				66E5FEEA1AA7C396008DF36B /* vsscript.cpp */,
+			);
+			path = vsscript;
+			sourceTree = "<group>";
+		};
+		66E5FE741AA62BD7008DF36B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				66E5FE751AA62BE1008DF36B /* VapourSynth.h */,
+				66E5FE761AA62BE1008DF36B /* VSHelper.h */,
+				66E5FE771AA62BE1008DF36B /* VSScript.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		667D4B3B1A9CDFEB00D42082 /* vapoursynth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667D4B501A9CDFEB00D42082 /* Build configuration list for PBXNativeTarget "vapoursynth" */;
+			buildPhases = (
+				661939761AA11591007DBA7C /* ShellScript */,
+				667D4B381A9CDFEB00D42082 /* Sources */,
+				667D4B391A9CDFEB00D42082 /* Frameworks */,
+				667D4B3A1A9CDFEB00D42082 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vapoursynth;
+			productName = vapoursynth;
+			productReference = 667D4B3C1A9CDFEB00D42082 /* libvapoursynth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		667D4B341A9CDFEB00D42082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Adam Thomas-Murphy";
+				TargetAttributes = {
+					667D4B3B1A9CDFEB00D42082 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 667D4B371A9CDFEB00D42082 /* Build configuration list for PBXProject "vapoursynth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 667D4B331A9CDFEB00D42082;
+			productRefGroup = 667D4B3D1A9CDFEB00D42082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				667D4B3B1A9CDFEB00D42082 /* vapoursynth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		661939761AA11591007DBA7C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/local/bin/cython -a vapoursynth/src/cython/vapoursynth.pyx";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		667D4B381A9CDFEB00D42082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E5FF0A1AA7C64E008DF36B /* vsapi.cpp in Sources */,
+				66E5FEEF1AA7C5F3008DF36B /* vapoursynth.c in Sources */,
+				66E5FF001AA7C64E008DF36B /* cpufeatures.c in Sources */,
+				66E5FF021AA7C64E008DF36B /* mergefilters.c in Sources */,
+				66E5FEEB1AA7C396008DF36B /* vsscript.cpp in Sources */,
+				66E5FF041AA7C64E008DF36B /* simplefilters.c in Sources */,
+				66E5FF0C1AA7C64E008DF36B /* vslog.cpp in Sources */,
+				66E5FF081AA7C64E008DF36B /* settings.cpp in Sources */,
+				66E5FF091AA7C64E008DF36B /* textfilter.cpp in Sources */,
+				66E5FF061AA7C64E008DF36B /* cachefilter.cpp in Sources */,
+				66E5FF0B1AA7C64E008DF36B /* vscore.cpp in Sources */,
+				66E5FF011AA7C64E008DF36B /* lutfilters.c in Sources */,
+				66E5FF0D1AA7C64E008DF36B /* vsthreadpool.cpp in Sources */,
+				66E5FF051AA7C64E008DF36B /* vsresize.c in Sources */,
+				66E5FF071AA7C64E008DF36B /* exprfilter.cpp in Sources */,
+				66E5FF031AA7C64E008DF36B /* reorderfilters.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		667D4B4E1A9CDFEB00D42082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Include/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		667D4B4F1A9CDFEB00D42082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Include/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		667D4B511A9CDFEB00D42082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEAD_CODE_STRIPPING = YES;
+				EXPORTED_SYMBOLS_FILE = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"VS_TARGET_CPU_ARM=1",
+					"VS_TARGET_OS_IOS=1",
+					"VS_PATH_PLUGINDIR=\\\"\\\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(CONFIGURATION_BUILD_DIR)/include/python",
+					"$(PROJECT_DIR)/ffmpeg/include",
+					"$(PROJECT_DIR)/vapoursynth",
+					"$(PROJECT_DIR)/vapoursynth/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(CONFIGURATION_BUILD_DIR)",
+					"$(PROJECT_DIR)/ffmpeg",
+				);
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		667D4B521A9CDFEB00D42082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEAD_CODE_STRIPPING = YES;
+				EXPORTED_SYMBOLS_FILE = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"VS_TARGET_CPU_ARM=1",
+					"VS_TARGET_OS_IOS=1",
+					"VS_PATH_PLUGINDIR=\\\"\\\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(CONFIGURATION_BUILD_DIR)/include/python",
+					"$(PROJECT_DIR)/ffmpeg/include",
+					"$(PROJECT_DIR)/vapoursynth",
+					"$(PROJECT_DIR)/vapoursynth/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(CONFIGURATION_BUILD_DIR)",
+					"$(PROJECT_DIR)/ffmpeg",
+				);
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667D4B371A9CDFEB00D42082 /* Build configuration list for PBXProject "vapoursynth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667D4B4E1A9CDFEB00D42082 /* Debug */,
+				667D4B4F1A9CDFEB00D42082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667D4B501A9CDFEB00D42082 /* Build configuration list for PBXNativeTarget "vapoursynth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667D4B511A9CDFEB00D42082 /* Debug */,
+				667D4B521A9CDFEB00D42082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 667D4B341A9CDFEB00D42082 /* Project object */;
+}
