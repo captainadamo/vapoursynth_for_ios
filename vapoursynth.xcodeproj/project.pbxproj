@@ -288,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/local/bin/cython -a vapoursynth/src/cython/vapoursynth.pyx";
+			shellScript = "export PATH=/opt/local/bin:/opt/local/sbin:$PATH\ncython_path=\"$(which cython)\"\nif [ ! -z $cython_path ]\nthen\n$cython_path -a vapoursynth/src/cython/vapoursynth.pyx\nelse\necho \"ERROR: cannot locate cython\"\nexit 127\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
