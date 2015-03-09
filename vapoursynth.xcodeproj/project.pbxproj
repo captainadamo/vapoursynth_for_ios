@@ -11,6 +11,8 @@
 		667D4C5D1A9CE93100D42082 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D4C5C1A9CE93100D42082 /* AVFoundation.framework */; };
 		667D4C5F1A9CE93F00D42082 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D4C5E1A9CE93F00D42082 /* CoreVideo.framework */; };
 		667D4C651A9CE9A800D42082 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D4C641A9CE9A800D42082 /* CoreMedia.framework */; };
+		66B5F11E1AAA1D1E005698EF /* vapoursynth.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FEEE1AA7C5F3008DF36B /* vapoursynth.h */; };
+		66B5F11F1AAA1D20005698EF /* vapoursynth_api.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FEEC1AA7C5F3008DF36B /* vapoursynth_api.h */; };
 		66E5FE7D1AA62BF9008DF36B /* VapourSynth.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FE751AA62BE1008DF36B /* VapourSynth.h */; };
 		66E5FE7E1AA62BF9008DF36B /* VSHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FE761AA62BE1008DF36B /* VSHelper.h */; };
 		66E5FE7F1AA62BF9008DF36B /* VSScript.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FE771AA62BE1008DF36B /* VSScript.h */; };
@@ -26,8 +28,6 @@
 		66E5FEE71AA7C311008DF36B /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E5FEDE1AA7C311008DF36B /* libswscale.a */; };
 		66E5FEEB1AA7C396008DF36B /* vsscript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEEA1AA7C396008DF36B /* vsscript.cpp */; };
 		66E5FEEF1AA7C5F3008DF36B /* vapoursynth.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEED1AA7C5F3008DF36B /* vapoursynth.c */; };
-		66E5FEF01AA7C605008DF36B /* vapoursynth_api.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FEEC1AA7C5F3008DF36B /* vapoursynth_api.h */; };
-		66E5FEF11AA7C605008DF36B /* vapoursynth.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66E5FEEE1AA7C5F3008DF36B /* vapoursynth.h */; };
 		66E5FF001AA7C64E008DF36B /* cpufeatures.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF21AA7C64E008DF36B /* cpufeatures.c */; };
 		66E5FF011AA7C64E008DF36B /* lutfilters.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF31AA7C64E008DF36B /* lutfilters.c */; };
 		66E5FF021AA7C64E008DF36B /* mergefilters.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E5FEF41AA7C64E008DF36B /* mergefilters.c */; };
@@ -52,10 +52,19 @@
 			dstSubfolderSpec = 16;
 			files = (
 				66E5FE7D1AA62BF9008DF36B /* VapourSynth.h in CopyFiles */,
-				66E5FEF01AA7C605008DF36B /* vapoursynth_api.h in CopyFiles */,
-				66E5FEF11AA7C605008DF36B /* vapoursynth.h in CopyFiles */,
 				66E5FE7E1AA62BF9008DF36B /* VSHelper.h in CopyFiles */,
 				66E5FE7F1AA62BF9008DF36B /* VSScript.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B5F11D1AAA1D09005698EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)/cython";
+			dstSubfolderSpec = 16;
+			files = (
+				66B5F11E1AAA1D1E005698EF /* vapoursynth.h in CopyFiles */,
+				66B5F11F1AAA1D20005698EF /* vapoursynth_api.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +244,7 @@
 				667D4B381A9CDFEB00D42082 /* Sources */,
 				667D4B391A9CDFEB00D42082 /* Frameworks */,
 				667D4B3A1A9CDFEB00D42082 /* CopyFiles */,
+				66B5F11D1AAA1D09005698EF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -252,7 +262,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Adam Thomas-Murphy";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					667D4B3B1A9CDFEB00D42082 = {
 						CreatedOnToolsVersion = 6.1.1;
